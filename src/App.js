@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import CreateForm from './CreateForm';
+import ToDo from './ToDo';
+import ToDoList from './ToDoList';
+import { useToDoContents } from './hooks/useToDoContents';
 
 function App() {
+  const { toDoContents, setToDoContents } = useToDoContents();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>ToDo App</h1>
+      <CreateForm toDoContents={toDoContents} setToDoContents={setToDoContents} />
+      <ToDoList>
+        {toDoContents.length ? toDoContents.map((item, index) => (
+          <ToDo
+            key={index}
+            index={index}
+            text={item}
+            toDoContents={toDoContents}
+            setToDoContents={setToDoContents}
+          />
+        )) : (
+          <p className='no-to-do-message'>ToDoはまだありません。</p>
+        )}
+      </ToDoList>
     </div>
   );
 }
