@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.a2c8c2ca.css",
-    "main.js": "/static/js/main.a1bc4baf.js",
-    "static/js/787.7d6d6079.chunk.js": "/static/js/787.7d6d6079.chunk.js",
-    "index.html": "/index.html",
-    "main.a2c8c2ca.css.map": "/static/css/main.a2c8c2ca.css.map",
-    "main.a1bc4baf.js.map": "/static/js/main.a1bc4baf.js.map",
-    "787.7d6d6079.chunk.js.map": "/static/js/787.7d6d6079.chunk.js.map"
+    "main.css": "/react-tutorial/static/css/main.a2c8c2ca.css",
+    "main.js": "/react-tutorial/static/js/main.81bc3502.js",
+    "static/js/787.7d6d6079.chunk.js": "/react-tutorial/static/js/787.7d6d6079.chunk.js",
+    "index.html": "/react-tutorial/index.html",
+    "main.a2c8c2ca.css.map": "/react-tutorial/static/css/main.a2c8c2ca.css.map",
+    "main.81bc3502.js.map": "/react-tutorial/static/js/main.81bc3502.js.map",
+    "787.7d6d6079.chunk.js.map": "/react-tutorial/static/js/787.7d6d6079.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a2c8c2ca.css",
-    "static/js/main.a1bc4baf.js"
+    "static/js/main.81bc3502.js"
   ]
 }
